@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, FormEvent } from 'react'
 import { useParams } from "react-router-dom";
 import api from '../../services/api'
 import '../usersPage/style.scss'
-import { Switch } from '@material-ui/core'
+import { Switch, InputLabel, Input, Button } from '@material-ui/core'
+import SaveIcon from '@material-ui/icons/Save'
 
 interface todoData {
     userId: number;
@@ -13,6 +14,7 @@ interface todoData {
 
 export function UserPage (){
     const [todos, setTodos] = useState<todoData[]>([])
+    const [title, setTitle] = useState("")
     const { id } = useParams<{ id: string }>()
     const userID = parseInt(id)     
 
@@ -21,11 +23,42 @@ export function UserPage (){
         .then(response => {setTodos(response.data)})
     },[])
 
+
+    function handleAddNewTodo(event: FormEvent){
+        event.preventDefault()
+        const newTodo = {
+            userId: userID,
+            id: todos.length+1,
+            title: title,
+            completed: false
+        }
+
+        if(title === ''){
+            return
+        }
+
+        setTodos([...todos, newTodo])
+        setTitle('')
+    }
     
 
     return (
         <main>
         <h1>Lista de TODOS</h1>
+        <form onSubmit={handleAddNewTodo} >  
+            <InputLabel htmlFor="my-input">TODO</InputLabel>
+            <Input id="my-input" aria-describedby="my-helper-text" value={title} onChange={event => setTitle(event.target.value)} />
+            <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                size="small"
+                className="buttonSave"
+                startIcon={<SaveIcon />}
+            >
+                Salvar
+            </Button>
+        </form>
         <div className="container">
             <table>
                 <thead>
@@ -47,7 +80,6 @@ export function UserPage (){
 
                             if(itemExists){
                                 itemExists.completed = event.target.checked
-                                
                             }
                             
                             setTodos(updatedList)
