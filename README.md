@@ -1,46 +1,79 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3>
 
-## Available Scripts
+Desafio para vaga de Dev Front-End na Escola Mais
 
-In the project directory, you can run:
 
-### `yarn start`
+</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+</div>
 
-### `yarn test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📚 **Sobre**
 
-### `yarn build`
+1 - Utilizar a API https://jsonplaceholder.typicode.com/ para criar um TODO list;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2 - A página inicial do TODO deve mostrar todos os usuários;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3 - Ao clicar no usuário o site deve levar para uma página que lista os TODO (tarefas) do usuário em questão;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4 - Deve ser possível adicionar um novo item no TODO list de um usuário específico; bem como marcar uma tarefa como concluída ou pendente;
 
-### `yarn eject`
+5- Pedimos que envie, por favor, o link do repositório como resposta para essa pergunta.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Iremos avaliar a execução do seu código. Para isso crie um README com instruções para subir/executar a sua aplicação e comentários que avaliar pertinente sobre a execução.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Obs1.: por se tratar de uma fake API, nenhum dado será registrado, a API apenas irá simular uma resposta, avaliando se a requisição foi correta ou não.
 
-## Learn More
+Obs2.: É necessário subir seu desafio em um repositório privado no github
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+<br>
+
+### 📌  **Tecnologias utilizadas**
+- React
+- Yarn
+- Axios
+- Material-UI
+- TypeScript
+
+<br>
+<br>
+
+### 🚀 **Mão na massa**
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/GabriellCdeC/TODOList-Desafio-Dev.git
+
+# Instale as dependências
+$ yarn
+
+# Execute a FAKE Api com JSON Server
+$ yarn server
+
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
+
+
+```
+
+<br>
+<br>
+
+<h3 align="center">
+Feito por <a href="https://www.linkedin.com/in/gabriell-castro-de-carvalho-a4a821144/">Gabriell Castro</a>
+<br><br>
+</a>
+</h3>
+
+<!-- Links -->
+
+
