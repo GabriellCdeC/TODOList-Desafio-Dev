@@ -54,13 +54,10 @@ Obs2.: É necessário subir seu desafio em um repositório privado no github
 $ git clone https://github.com/GabriellCdeC/TODOList-Desafio-Dev.git
 
 # Instale as dependências
-$ yarn
-
-# Execute a FAKE Api com JSON Server
-$ yarn server
+$ yarn ou npm instal
 
 # Execute a aplicação em modo de desenvolvimento
-$ yarn start
+$ yarn start ou npm start
 
 
 ```
