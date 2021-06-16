@@ -59,6 +59,9 @@ $ yarn ou npm instal
 # Execute a aplicação em modo de desenvolvimento
 $ yarn start ou npm start
 
+# Abra no navegador de sua preferência
+$ http://localhost:3000  
+
 
 ```
 
